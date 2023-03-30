@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./style.css" ,="" rel="stylesheet" type="text/css">
+    <title>農農市集 | 視覺蔬果採購</title>
+    <link rel="shortcut icon" href="res/TOMATO_logo.png" >
+    <!-- <audio autoplay muted>
+      <source src="./res/BGM.mp3" type="audio/mpeg">
+  </audio> -->
+  <audio src="./res/BGM.mp3"></audio>
+  
+
+  </head>
+
+  <body>
+    <!-- <iframe src="./res/silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe>
+    <audio id="player" autoplay controls>
+        <source src="./res/BGM.mp3" type="audio/mp3">
+    </audio> -->
+    <!-- <audio autoplay loop src="./res/BGM.mp3"></audio> -->
+
+                                                        <!-- Trying to make an autoplay BGM, but failed -->
+    
+    <div id="navbar">
+      <div id = "back_homeLOGO">
+        <a href="https://www.facebook.com/100002813705818/videos/oa.958717181713163/1448777822576627" target="_blank" class="homelink">
+          農農市集
+        </a>
+      </div>
+      <div id = "back_homeLOGOUnder">
+        <a href="https://www.facebook.com/100002813705818/videos/oa.958717181713163/1448777822576627" target="_blank" class="homelinkEN">
+          Farmer's Market
+        </a>
+      </div>
+
+      <div id = "back_home">
+        <a href="hw1_2.html" target="_self" class="homelink">
+          首頁
+        </a>
+      </div>
+      <div id = "back_homeUnder">
+        <a href="hw1_2.html" target="_self" class="homelinkEN">
+          Home
+        </a>
+      </div>
+
+      <div id = "about">
+        <a href="https://popcat.click/" target="_blank" class="homelink">
+          關於我們
+        </a>
+      </div>
+      <div id = "aboutUnder">
+        <a href="https://popcat.click/" target="_blank" class="homelinkEN">
+          About Us
+        </a>
+      </div>
+
+      <div id = "cart">
+        <a href="https://www.facebook.com/%E5%8F%B0%E5%8C%97%E8%8A%B1%E5%8D%9A%E8%BE%B2%E6%B0%91%E5%B8%82%E9%9B%86-723721420993772/" target="_blank" class="homelink">
+          我的訂單
+        </a>
+      </div>   
+      <div id = "cartUnder">
+        <a href="https://www.facebook.com/%E5%8F%B0%E5%8C%97%E8%8A%B1%E5%8D%9A%E8%BE%B2%E6%B0%91%E5%B8%82%E9%9B%86-723721420993772/" target="_blank" class="homelinkEN">
+          My Order
+        </a>
+      </div> 
+    </div>
+
+
+    <div id = "home_Im_2"></div>
+
+    <div id = "startButton">
+      <a href="./selecting.html" style="position:fixed; width:60px; height:60px;" target="_self" class="homelinkEN"></a>
+    </div>
+
+    
+     
+    <audio src="./res/BGM.mp3"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- <script src='./exercise.js'></script> -->
+
+    
+    <div id="carrot_inf">
+      <!-- <p style=" transform: translateX(80px); font-size: 27px;">名稱: 馬鈴薯</p> -->
+      <div class = "carrot_text">
+        <p style="font-family: 'source'; font-weight: bold">名稱: 胡蘿蔔</p>
+      </div>
+
+      <img src="./res/CARROT_logo.png" style="height: 60%; transform: translateY(-10px);"></img>
+
+    
+    <canvas id = "myChart3" ></canvas>
+        <script>     const data = {
+          labels: [
+            '剩餘',
+            '賣出',
+          ],
+          datasets: [{
+            data: [10, 90],
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(237, 244, 255)'
+            ],
+            hoverOffset: 4
+          }]
+        };
+              
+               new Chart("myChart3", {
+                type: 'doughnut',
+                data,
+                
+        
+          
+        });</script>
+        <div class="slider">
+          <input type="range" min="0" max="100" value="70" oninput="rangeValue.innerText = this.value">
+          <p id="rangeValue">70</p>
+        </div>
+        <script src='./exercise.js'></script>
+      </div>
+    
+       
+    
+    
+    
+    
+
+    
+
+
+    
+
+    
+  </body>
+  
+</html>
+
+
